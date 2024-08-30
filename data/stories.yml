@@ -1,0 +1,175 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: city like
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: forts_to_visit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: forts
+  - action: utter_forts
+
+- story: metro
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: metro
+  - action: utter_metro
+
+- story: restaurants_to_visit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurants
+  - action: utter_restaurants
+
+- story: hotels_to_stay
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hotels
+  - action: utter_hotels
+
+#    - action: utter_question
+#    - intent: slot{
+#                   "questionR: good luck cafe"}
+#    - action: action_prebook
+#    - intent: slot{
+#                    "prebook: yes"}
+#    - action: action_feedback
+#    - intent: slot{
+#                    "feedback: good"}
+#    - action: utter_goodbye
+
+
+- story: malls_to_visit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: malls
+  - action: utter_malls
+
+- story: temples_to_visit
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: temples
+  - action: utter_temple
+
+- story: trekking_sites
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: trekking
+  - action: utter_trekking
+
+- story: Maharashtrian_food
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurants
+  - action: utter_restaurants
+  - intent: street_food
+  - action: utter_street_food
+  - intent: Maharashtra_food
+  - action: utter_Maharashtra_food
+
+- story: ancient_sites
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: historical_places
+  - action: utter_historical_places
+
+#- story: weather_type
+#  steps:
+#    - intent: greet
+#    - action: utter_greet
+#    - intent: weather_best_time
+#    - action: utter_weather_best_time
+#
+#
+#- story: get_weather_type
+#  steps:
+#    - intent: greet
+#    - action: utter_greet
+#    - intent: get_weather
+#    - action: utter_weather_best_time
+
+- story: street_shopping
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: local_shopping
+  - action: utter_local_shopping
+
+- story: entertainment_parks
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: amusement_parks
+  - action: utter_amusement_parks
+
+- story: local_food
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: restaurants
+  - action: utter_restaurants
+  - intent: Maharashtra_food
+  - action: utter_Maharashtra_food
+  - intent: street_food
+  - action: utter_street_food
+
+#- story: User asks for weather in a specific city
+#  steps:
+#  - intent: ask_weather
+#  - action: utter_ask_weather
+#  - intent: get_weather
+#  - action: action_get_weather
+
+#- story: temple_oth
+#- intent: option2
+#    - action: utter_option2
+#
+
+
+
+

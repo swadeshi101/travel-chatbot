@@ -1,0 +1,331 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - temples
+  - forts
+  - malls
+  - restaurants
+  - hotels
+  - metro
+  - trekking
+  - Maharashtra_food
+  - historical_places
+  - local_shopping
+  - amusement_parks
+  - street_food
+
+
+responses:
+  utter_greet:
+  - text: "Hi friends!!! iPunekar, your tour guide for Pune. Tell me how can I help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+#  utter_welcome:
+#  - text: "iPunekar welcomes you."
+
+
+
+  utter_metro:
+  - text: "Use this map for your ready reference: '\n' 
+             https://t.ly/z9kJp"
+
+  utter_hotels:
+  - text: "These are the top hotel along withe thier location, image, contact number for yout reference: 
+            
+            1. 1. Hyatt Pune
+            https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.hyatt.com%2Fen-US%2Fhotel%2Findia%2Fhyatt-regency-pune%2Fpunhr&psig=AOvVaw1PvT_pWoWQ74AotbuscXUB&ust=1695138493705000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOD_5JDBtIEDFQAAAAAdAAAAABAP   
+            Address: Adjacent To Aga Khan Palace, 88, Nagar Rd, Kalyani Nagar, Pune, Maharashtra 411006
+            Contact No: 020 4141 1234
+            Location: https://maps.app.goo.gl/NwAPaGExXFXv3goe6
+            
+            2. Radisson Blu Hotel Pune Kharadi                                                                                              https://www.google.com/maps/place/Radisson+Blu+Hotel+Pune+Kharadi/@18.5533886,73.9376372,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipMgyE-ebHigv3NiHFEPP_sRbeKLyXR9gHm_MgmG!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMgyE-ebHigv3NiHFEPP_sRbeKLyXR9gHm_MgmG%3Dw203-h152-k-no!7i9248!8i6936!4m10!3m9!1s0x3bc2c3d8c5ab8501:0x5984b80264a16012!5m2!4m1!1i2!8m2!3d18.5533931!4d73.9379346!10e5!16s%2Fg%2F11cnd9qsrf?entry=ttu#     
+            Address: Nagar Bypass, Road, Kharadi, Pune, Maharashtra 411014
+            Contact No:  020 2706 0606
+            Location: https://maps.app.goo.gl/jRy8ZGDGTUS3ecRL6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         3. The Oakwood
+            https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.makemytrip.com%2Fhotels%2Fthe_oakwood_hotel-details-pune.html&psig=AOvVaw0mvW8VZRGW65EdRbmBOwXS&ust=1695139454773000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOjvodvEtIEDFQAAAAAdAAAAABAI  
+            Address: Good Luck Square, 759/36, Bhandarkar Rd, Deccan Gymkhana, Pune, Maharashtra 411004  
+            Contact No:  020 2567 0011
+            Location: https://maps.app.goo.gl/vty8721VACSxX9W47
+            
+            4. JM Four Hotel
+            https://www.google.com/maps/place/JM+Four+Hotel/@18.5221099,73.8464389,3a,75y,90t/data=!3m8!1e2!3m6!1shttps:%2F%2Fimages.trvl-media.com%2Flodging%2F93000000%2F92360000%2F92351000%2F92350974%2Fb89e5490_z.jpg!2e7!3e27!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-proxy%2FAF-Tc0S3dyGJudDhZxJVYlDumi1CfjboC8y-0k3wjGCHOgDI0VrieI-ttUgL61zDMAOLSSExrQp67v-ZZPtfOk81esiza4fWMbadmCtYVU1oZ43ayXBYTl3ENRrunvhzM3-d0X4PpYGvcSD8vmL5BeK2WI-oXX-QQTBL-9FVDilFgfNibJ9rwAvDZ-e4%3Dw203-h135-k-    no!7i1000!8i666!4m10!3m9!1s0x3bc2c0786d2c620d:0x4895c1365a082af8!5m2!4m1!1i2!8m2!3d18.5221099!4d73.8464389!10e5!16s%2Fg%2F1tpf5lfq?entry=ttu#           
+            Address: 1205/3/4, Shivajinagar, 1205/3/4, ShivajinJangali Maharaj Rd, behind Adidas Showroom, opp. Sambhaji Park, Deccan Gymkhana, Pune, Maharashtra 411004
+            Contact No:
+            Location: https://maps.app.goo.gl/Fb5oJs3R1cARa6oy9   
+            5. The Deccan Royaale
+            https://www.google.com/maps/place/The+Deccan+Royaale/@18.5193719,73.8452572,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPZkjfbWl4tsv1qkK_17uePIYavARTvENPgWy3P!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPZkjfbWl4tsv1qkK_17uePIYavARTvENPgWy3P%3Dw203-h136-k-no!7i2279!8i1536!4m10!3m9!1s0x3bc2c158021abfc7:0x94353a6737b6a750!5m2!4m1!1i2!8m2!3d18.5192342!4d73.8454338!10e5!16s%2Fg%2F11kqw60s5v?entry=ttu#           
+            Address: Jangli Maharaj Road, 573/2, The Deccan Royaale, J.M Road ( Jungli Maharaj Road, 411004, Pune, Maharashtra 411004
+            Contact No:
+            Location: https://maps.app.goo.gl/JXFNjgERWrAdxYxs6 "
+  
+  utter_temple:
+  - text:  "Here is the list of famous Temples in Pune: 
+  
+            1.Shreemant Dagdusheth Halwai Ganpati Mandir
+              https://t.ly/dTzjc
+              Timings: 6 am–10:30 pm
+              location: https://maps.app.goo.gl/w8LqcnU38zhuG3Fo7                                                                                                                                                                                                                                                                                                                                                                                                         
+              
+            2. Shree Omkareshwar Temple
+              https://t.ly/TlVzj
+              Address: Balgandharva Bridge, 233 Near, Chandrashekhar Govind Aapte Rd, Shaniwar Peth, Pune, Maharashtra 411030
+              Phone no.: 020 2443 0663
+              Timings: 6 am–1 pm, 4–10 pm
+              Link: https://maps.app.goo.gl/5G673KzxMJRcVLCy9   
+                       
+            3. ISKCON temple
+              https://t.ly/7qn5U
+              Address: 4, Colonel Tarapore Rd, beside Dastoor Boys School, Camp, Pune, Maharashtra 41100
+              Phone no.: 080075 00175
+              Timings: 4:30 am–1 pm, 4:30–8 pm, 9–9:10 pm
+              Link: https://maps.app.goo.gl/pVGnZ8XScgXgMBVT7
+              
+            4. Shree Nageshwar Shiva Temple
+              https://t.ly/Q1rqt
+              Address: GVC7+F84, Somwar Peth, Pune, Maharashtra 411011
+              Phone no.: 020 25501000
+              https://maps.app.goo.gl/yu5jBQszUqrov6se6
+              
+            5. Tukai Devi Mandir
+              https://t.ly/x7wfl
+              Address: HQ5Q+FCH, Baner Hills, Baner, Pune, Maharashtra 411045
+              Timings: 8 am–10 pm
+              https://maps.app.goo.gl/Q5jhHv8jCz67ofwq9 "
+
+  utter_forts:
+    - text: "Here's the list of famous Forts in Pune:
+  
+            1. Sinhagad fort                                                                                                                                                                                                                                                                                                                                                                                     https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.dnaindia.com%2Fsites%2Fdefault%2Ffiles%2F2014%2F07%2F23%2F253056-sinhagad-fort.jpg%3Fim%3DFitAndFill%3D(1200%2C900)&tbnid=TMJScaFKUWTvnM&vet=12ahUKEwj40uD8x7OBAxUUjmMGHZGbA3YQMygAegQIARB0..i&imgrefurl=https%3A%2F%2Fwww.dnaindia.com%2Fpune%2Freport-pune-read-this-if-you-plan-to-visit-sinhagad-fort-this-weekend-2004572&docid=tS2loR8HkZ2fFM&w=1200&h=900&q=sinhagad%20fort&ved=2ahUKEwj40uD8x7OBAxUUjmMGHZGbA3YQMygAegQIARB0   
+            https://t.ly/0zX5
+            Address: Sinhagad Ghat Rd, Thoptewadi, Maharashtra 411025,                                                                                                                                                                                                 Timing- 5 am - 6 pm
+            Location: https://maps.app.goo.gl/sKWRK6of7SAKUmpQ9
+                      
+            2. Lohagad fort
+            https://t.ly/ExC2b
+            Address: Lohagad is one of the many hill forts of Maharashtra state in India. Situated close to the hill station Lonavala and 52 km northwest of Pune.
+            Location: https://maps.app.goo.gl/TMknLoC227D2WWYd8
+            
+            3. Lal mahal
+            https://t.ly/mLgwT
+            Address: Chhatrapati Shivaji Maharaj Rd, Durvankur Society, Kasba Peth, Pune, Maharashtra 411011
+            Location: https://maps.app.goo.gl/1XGrjLrDT8Q58K1PA
+            
+            4. Shaniwar wada
+            https://t.ly/CB8w7
+            Address: Shaniwar Peth, Pune, Maharashtra 411030
+            Location: https://maps.app.goo.gl/9bUsuXjBRp4YHmAaA "
+
+  utter_restaurants:
+    - text: "1. Good luck cafe
+                https://t.ly/hHE0v
+                Address: Fergusson College Rd, near Goodluck Chowk, Deccan Gymkhana, Pune, Maharashtra 411004
+                Time: 8:00 AM to 11:30 PM
+                Phone: 020 2567 6893
+                Location: https://maps.app.goo.gl/MeZL1N5yAg9hfaVw8  
+                Reviews: 
+                1. Nice ambience Very Popular place Polite staff Delicious food Decent price”
+                2. I tried the famous bun maska and tea with special mutton keema. All the dishes were good to taste.
+                3. Finally a place to satiate the craving for good food and Irani chai.
+                Recommended dishes: Chai and Bun Maska, Non Veg, Custard, Egg Bhurji, Irani Tea, Nutella, Bun Omelette.
+                
+                2. Marzorin 
+                https://t.ly/hgvlv
+                Address: Bakthiar Plaza, 6, MG Road, Opposite Bombay Store, Camp, Pune, Maharashtra 411001
+                Time: 8:30 AM - 10:00 PM
+                Phone: 077220 94983
+                Location: https://maps.app.goo.gl/NqyFzDD4rSpnGJN3A  
+                Reviews: 
+                1. Marzorin restaurant exceeded all expectations! The food was amazing, and the view and location were perfect. Highly recommended! Must try: Macaroni pasta.
+                2. One could have a nice me-time on a winter evening here, with years old baked biscuits , coffee and sandwiches.
+                3. Chutney sandwich is the only thing that’s famous there don’t miss to try that it actually was so good
+                Recommended dishes: Spaghetti Pasta, Chicken Mayonnaise Sandwich, Chutney Sandwich, Macaroni Cheese, Paneer Grilled Sandwich and Tea, Black Forest Cake, Grilled Sandwiches, Chicken Mayonnaise, Grilled Chicken, Sugar Free, Chutney, Mac N Cheese, Blueberry, Macaroons, Vegan, Coconut, Chutney Sandwiches, Rose Milk, Cookies, Strawberry
+                
+                3. Dorabjee and Sons Restaurant
+                https://t.ly/gPOkc
+                Address: 845, Dastur Meher Road, Sharbat Wala, Chowk, Pune, Maharashtra 411001
+                Time: Open 24 hours
+                Phone:  020 2614 5955.
+                Location: https://maps.app.goo.gl/pD9k7wLAiorLSrk79  
+                Reviews:
+                1. If you all look forward to a bad day, please visit Dorabjee And Sons on first top most priority. Heard alot, soo went there out of respect for tradition and good food.
+                2. The taste is amazing we had biryani and it was so fragrant at the same time light on the stomach. Along with that we also had Ardee's soda, which almost tasted like red bull but yeah... It was good. The prices are good, taste is awesome and I would definitely recommend this place to anyone who is looking for authentic parsi food on a weekend afternoon. People are welcoming and the service is also good.
+                3. Best place for iconic and authentic Irani food. It's not a place for vegetarians, there is a menu for sure but the meat tastes better. They have varieties of snacks and meals which compliment each other and even the authentic beverages which go well with the food. Cutlets are really good and scrumptious. To finish the meal, try the desserts.
+                Recommended Dishes: Chicken Cutlet, Mutton Cutlet, Chicken Biryani Rice, Mutton Dhansak with Brown Rice, Mutton Biriyani, Chicken Dhansak with Brown Rice, Lagan Nu Custard
+                
+                
+                \n 4. Vaishali Restaurant
+                https://t.ly/Pjp-0
+                Address:  Fergusson College Rd, Ganeshwadi, Shivajinagar, Pune, Maharashtra 411005
+                Time: 7:00 AM to 11:00 PM
+                Phone:020 2553 1244
+                Location: https://maps.app.goo.gl/6VH9AjCmeAUxYeyu5 
+                Reviews:
+                1. The food here is very tasty. There is also a good variety of South Indian dishes. The restaurant is clean and the atmosphere is lively.
+                2. The only best place for south indian food in Pune. We had cheese onion uttapa, mysore masala dosa, masala dosa, cheese chilli toast, and coffee. The coffee is amazing something to die for.
+                3. This place serves delicious South Indian food but is usually very crowded.... However... Wait is worth the money
+                Recommended Dishes: Masala Dosa Mysore Masala Dosa with Cheese, Cheese Chilli Toast, Shev Potato Dahi Puri, Veg Cutlet,Cheese Chilli Toast, Vaishali Special Masala Dosa, Dahi Vada, Onion Uttappa, Idli Sambhar, Breakfast"
+
+  utter_malls:
+    - text: "1. Amanora Mall- Hadapsar
+                https://t.ly/qCW3V
+                Address: Mundhwa - Kharadi Rd, Amanora Park Town, Hadapsar, Pune, Maharashtra 411028
+                Time: 10 am - 10 pm
+                Location: https://maps.app.goo.gl/mMyxTogHUYkGuJfm9
+                
+                \n 2. Phoenix Marketcity- Viman Nagar
+                https://t.ly/8R3eT
+                Address: S No. 207, Phoenix Marketcity, Viman Nagar Rd, Clover Park, Viman Nagar, Pune, Maharashtra 411014
+                Time: 10 am - 10 pm
+                Location: https://maps.app.goo.gl/nSgVCywqkXAp1qRW6  
+                      
+                \n 3. The Pavillion Mall
+                https://t.ly/RxNjF
+                Address: Model Marriott Hotel, Senapati Bapat Rd, next to JW MARRIOTT HOTEL, Laxmi Society, Model Colony, Shivajinagar, Pune, Maharashtra 411016
+                Time: 10 am - 10 pm
+                Location: https://maps.app.goo.gl/nJeRZrbM5HQ3Xjgh9
+                
+                \n 4. Westend Mall- Aundh
+                https://t.ly/QabQL
+                Address: Mahadji Shinde Rd, Near Parihar Chowk, Harmony Society, Ward No. 8, Wireless Colony, Aundh, Pune, Maharashtra 411007
+                Time: 10 am - 10 pm
+                Location: https://maps.app.goo.gl/3gKh897xy5c3XEtX7
+                
+                \n 5. Xion Mall
+                https://t.ly/sjkUn
+                Address: Hinjewadi - Wakad Rd, Hinjawadi - Aundh Rd, Hinjawadi Village, Hinjawadi, Pune, Maharashtra 411057
+                Time: 10 am - 10 pm
+                Location: https://maps.app.goo.gl/FCoWaqLdZfNMHmsg9 "
+
+  utter_trekking:
+    - text: " These are some of the places you can explore for trekking:
+            \n 1.  Sinhagad Trek
+                Image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fpunetourism.co.in%2Fsinhagad-fort-pune&psig=AOvVaw37P9Ctn8JO0dZ0U54VAzCI&ust=1695276198937000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKifn5bCuIEDFQAAAAAdAAAAABAN
+                
+                Starting point of the trek: Donje Gaon
+                Distance from Pune: 20 km
+                Best route to get there: https://goo.gl/maps/NSZ2P6MKVaX4ViqS8
+
+            \n 2.  Torna Fort Trek
+                Image:https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.treksandtrails.org%2Ftours%2Ftorna-fort-trek&psig=AOvVaw24y9aZQtKqGHouVdLvPjM8&ust=1695276334400000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKCW5M_CuIEDFQAAAAAdAAAAABAI
+                Starting point of the trek: Velhe village
+                Distance from Pune: 48 km
+                Best route to get there: https://goo.gl/maps/ccdty7LacAeAz3aH9 
+	
+            \n 3.  Rajgad Trek
+                Image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.adventureclubpune.com%2Ftours%2Frajgad-fort-day-trek&psig=AOvVaw2h7kce9hRfEVG3-IPqnr_p&ust=1695276449280000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMiT74vDuIEDFQAAAAAdAAAAABAI
+                Starting point of the trek: Gunjavane village
+                Distance from Pune: 62 km
+                Best route to get there: https://goo.gl/maps/ZRH5KcYgGpeuXgLc9
+
+            \n 4.  Visapur Fort Trek
+                Image:
+                https://www.google.com/url?sa=i&url=https%3A%2F%2Fsavetoursandtravels.com%2Fto	
+                Starting point of the trek: Bhaje village
+                Distance from Pune: 64 km
+                Best route to get there: https://goo.gl/maps/Z1njsVNgwNe6CFip7
+
+            \n 5.  Lonavala Bhimashankar Trek
+                https://t.ly/2FEFd
+                Starting point of the trek: Lonavala
+                Distance from Pune: 68 km
+                Best route to get there: https://goo.gl/maps/qBnFQJbScaURpjxAA "
+
+  utter_Maharashtra_food:
+    - text: " Here are some of the best places to try traditional Maharashtrian food in Pune:
+              
+              \n Wadeshwar: This restaurant is known for its authentic Maharashtrian cuisine. The menu includes a variety of dishes, such as thalis, pitla bhakri, varan bhat, and misal pav.
+              \n Peshwa: This restaurant serves traditional Maratha cuisine. The menu includes a variety of dishes, such as thalis, kothimbir wadi, bharli vangi, and puran poli.
+              \n Asha Dining Hall: This restaurant has been serving authentic Maharashtrian cuisine for over 70 years. The menu includes a variety of dishes, such as thalis, vada pav, and puran poli.
+              \n Shreyas: This restaurant is known for its thalis, which are served with a variety of Maharashtrian dishes, such as varan bhat, pitla bhakri, and kothimbir wadi.
+              \n Durvankur: This restaurant is known for its affordable and delicious Maharashtrian cuisine. The menu includes a variety of dishes, such as thalis, vada pav, and misal pav.
+              
+              \n Here are some additional tips for trying traditional Maharashtrian food:
+              \n Try a thali: A thali is a great way to try a variety of Maharashtrian dishes. Thalis are typically served with a rice dish, a dal dish, a vegetable dish, a roti, and a sweet dish.
+              Don't be afraid to try new things: Maharashtrian cuisine has a lot to offer, so don't be afraid to try new dishes. Some of the most popular Maharashtrian dishes include vada pav, misal pav, puran poli, and kothimbir wadi.
+              \n Hope you enjoy the food "
+
+  utter_historical_places:
+    - text: " Here are some of the best places to learn about Pune's history and culture:
+            \n Shaniwar Wada: This 17th-century fort was once the seat of the Maratha Empire, and it is now a museum that houses a collection of artifacts from that period.
+            
+            \n Raja Dinkar Kelkar Museum: This museum houses a collection of over 20,000 artifacts from India and around the world, including puppets, musical instruments, and textiles.
+            
+            \n Osho International Meditation Resort: This meditation center offers a variety of courses and workshops on meditation, yoga, and other aspects of Indian culture.
+            
+            \n Pune University: This university offers a variety of courses and degrees on Indian history, culture, and languages.
+            
+            \n Lal Mahal: It happens to be a famous tourist place in Pune, which was established in 1630 AD by Shahaji Bhosale. The restored structure offers a passage to the glorious bygone era.
+
+            \n Raja Dinkar Kelkar Museum: The museum is located close to the city centre and is home to some of the priceless collections of Dr Dinkar G Kelkar. There are more than 15000 collections in the museum.
+
+            \n Parvati Hill: This is yet another beautiful place that is much popular in the middle of adventure seekers and escapade lovers. The temple at the top of the summit displays the heritage of the times gone by.
+
+            \n Saraswati Baug: This garden is home to a number of temples, including the Saraswati Temple and the Tekdi Ganapati Temple. It is also a popular spot for cultural events and festivals. "
+
+#  utter_weather_best_time:
+#    - text: " Pune has a tropical climate with three seasons: summer, monsoon, and winter. Summers in Pune can be very hot and humid, with temperatures often reaching above 40 degrees Celsius. The monsoon season lasts from June to September, and the city receives heavy rainfall during this time. Winters in Pune are mild and sunny, with occasional cold spells.
+#             The best time to visit Pune is during the winter months (October to March), when the weather is pleasant."
+
+  utter_local_shopping:
+    - text: " Pune is a great city for shopping, with a wide range of options to choose from, including traditional markets, malls, and high-end boutiques. Here are some of the best places to shop in Pune:
+            \n Laxmi Road Market: This popular shopping street is known for its wide variety of goods, including clothing, jewelry, footwear, electronics, and home decor. You can find everything from budget-friendly items to high-end brands at Laxmi Road Market.
+            
+            \n Tulsi Baug Market: This wholesale market is a great place to buy fresh produce, spices, and other household items at affordable prices. You can also find a variety of clothing, jewelry, and handicrafts at Tulsi Baug Market.
+            
+            \n Fashion Street: This open-air market is a great place to buy trendy and affordable clothing, shoes, and accessories. You can also find a variety of street food stalls at Fashion Street.
+            
+            \n Hong Kong Lane: This narrow street is known for its wide variety of electronic goods, including mobile phones, laptops, and computer accessories. You can also find a variety of other goods at Hong Kong Lane, such as watches, sunglasses, and clothing.
+            
+            \n Phoenix Market City: This is one of the largest malls in Pune and offers a wide variety of shops, including international brands, Indian brands, and local brands. You can also find a number of restaurants, cafes, and entertainment options at Phoenix Market City.
+            
+            \n Seasons Mall: This is another large mall in Pune that offers a wide variety of shops, restaurants, and entertainment options.
+            
+            \n Amanora Mall: This mall is located in the eastern suburbs of Pune and offers a wide variety of shops, restaurants, and entertainment options.
+            
+            \n Clover Centre: This mall is located in the central part of Pune and offers a wide variety of shops, restaurants, and entertainment options. "
+
+  utter_amusement_parks:
+    - text:
+            " Here are some amusement parks in Pune:
+            \n Seven Wonders Dream Park is located at 1, Shiv Darshan Rd, Anurag Society, Sivadarshan Poorgrasta Vasahat, Parvati Paytha, Pune, Maharashtra 411009, India. It has a rating of 3.9 stars on Google Maps.
+            
+            \n Diamond Water Parks is located at Survey No. 41, JX25+X44, B2, Diamond Water Park Rd, Lohegaon, Pune, Maharashtra 411047, India. It has a rating of 3.7 stars on Google Maps. It is an amusement park with water slides, a wave pool & a lazy river, plus a vegetarian restaurant.
+            
+            \n SkyJumper Trampoline Park - Pune is located at FOUNTAIN HOUSE, LEVEL-02, CREATICITY MALL, Shastrinagar, Yerawada, Pune, Maharashtra 411006, India. It has a rating of 4.9 stars on Google Maps. It has soft-play areas & laser-tag games at a family activity center with climbing ropes & trampolining.
+            
+            \n Theme Park is located at GV7X+2CR, Empress Garden, Kavade Mala, Ghorpadi, Pune, Maharashtra 411001, India. It has a rating of 4 stars on Google Maps.
+            
+            \n The Aquamarine water sports is located at HP6Q+HW5, Jay Bhavani Rd, Maharashtra 412115, India. It has a rating of 4.1 stars on Google Maps.
+            
+            \n Please note that these are just a few examples, and there are many other amusement parks in Pune. I recommend doing some research to find one that is right for you and your family.  "
+
+  utter_street_food:
+    - text: " Misal Pav and Bun Maska are two of the very famous foods you can enjoy in Pune. In addition to these, you can also relish roadside snacks including Kanda Poha, Amiti, Bhakarwadi, Keema Pav and a milkshake consisting of various fruits and named “Mastani”. "
+
+#  utter_ask_weather:
+#    - text: "Sure, can you specify the city"
+
+#actions:
+#  - action_get_weather
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

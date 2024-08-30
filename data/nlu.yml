@@ -1,0 +1,279 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hello, how are you?
+    - HI
+    - HELLO
+    - HI, HOW ARE YOU?
+    -  Hello, how are you?
+    
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+
+
+#- intent: bot_challenge
+#  examples: |
+#    - are you a bot?
+#    - are you a human?
+#    - am I talking to a bot?
+#    - am I talking to a human?
+
+- intent: temples
+  examples: |
+    - Temples in pune
+    - Can you tell me temples in pune
+    - Temple to visit
+    - Visit temple
+    - Religious places in pune
+    - Pune religious places
+    - Pune temples
+    - Pune temples
+
+- intent: forts
+  examples: |
+    - Forts in pune
+    - Can you tell me forts in pune
+    - Forts to visit
+    - Visit fort
+    - Famous forts
+    - Famous forts in Pune
+    - Pune forts
+    - Forts in pune city
+
+- intent: malls
+  examples: |
+     - Malls in pune
+     - Best malls in pune
+     - Pune mall
+     - Biggest mall in pune
+     - Shopping malls
+     - Shopping malls in pune
+     - please tell me shopping malls in pune
+     - which is the best shopping mall in pune
+     - which is the nearest shopping mall
+     - tell me some malls names
+     - top 10 malls in pune
+     - name malls in pune
+     - shopping  mall in pune
+     - Malls near me
+     - Malls in pune city
+     - mall in pune city
+     - best mall
+
+- intent: restaurants
+  examples: |
+    - Best food places in pune
+    - Must try food places in pune
+    - top food places in pune
+    - best snacks in pune
+    - Can you tell me what food places should i eat in pune
+    - Famous food places in pune
+    - Which place should I go for best food in pune
+    - Where can I find the best food to eat in pune
+    - Most visited restaurants in pune
+    - Best restaurants in pune
+    - Top restaurants in pune
+
+- intent: hotels
+  examples: |
+    - Best hotel in pune
+    - 5star hotels in pune
+    - Must try  hotels in pune
+    - Famous  hotels in pune
+    - Which hotels should I stay in pune
+    - Where can i find the best food to eat in pune
+    - Most visited  hotels in pune
+    - Best  hotels in pune
+    - Top hotels in pune
+    - Tell me the best hotel to stay in Pune
+    - Which is the best hotel in Pune
+    - give me a list of all the 5 start hotels in pune
+    - give me a list of all the 4 start hotels in pune
+    - give me a list of all the 3 start hotels in pune
+    - suggest me an economical hotel in pune
+    
+
+- intent: metro
+  examples: |
+    - Suggest metro
+    - Metro in Pune
+    - Metro
+    - Need help with metro
+    
+- intent: trekking
+  examples: |
+    - Best trekking site in Pune
+    - Trekking places to visit in pune
+    - Best trekking places to visit with friends
+    - Trekking sites for beginners 
+    - Trekking sites with starting point and distance
+    - Top trekking sites to visit with family
+
+- intent: Maharashtra_food
+  examples: |
+    - What are the best places to try traditional Maharashtrian food?
+    - maharashtrian food in pune
+    - best maharashtrian thali in pune
+    - marathi food
+    - puran poli in pune
+
+- intent: historical_places
+  examples: |
+    - What are the best places to learn about Pune's history and culture?
+    - historical places in pune
+    - which are the historical places in pune?
+    - what are museums in pune?
+    - what are historical places in pune?
+
+#- intent: weather_best_time
+#  examples: |
+#    - how is weather in pune?
+#    - weather in pune
+#    - What is the weather like in Pune?
+#    - What is the best time to visit Pune?
+#    - best time to visit
+#    - climate in pune
+#    - how is weather in pune?
+#    - how is the climate in pune
+
+- intent: local_shopping
+  examples: |
+    - window shopping in pune
+    - which is the best place for street shopping
+    - Which is the best place for window shopping
+    - Which shopping places in Pune should I explore?
+    - I wish to go for shopping in Pune. Any recommendations?
+
+- intent: amusement_parks
+  examples: |
+    - best amusement parks near me
+    - water parks in pune
+    - what are the best amusement parks in pune
+    - amusement parks near pune
+    - what are the best water parks in pune
+
+- intent: street_food
+  examples: |
+    - best street food in pune?
+    - which are best street food places in pune?
+    - where do we get best bun muska?
+    - what are best street food places?
+    - street food
+    - street food in pune
+    - I wish to try the street food in Pune. Any recommendations?
+
+#- intent: ask_weather
+#  examples: |
+#    - How is the weather
+#    - Can you tell me about the weather
+#    - Tell me the weather
+#    - What's the weather like?
+
+#- intent: get_weather
+#  examples: |
+#    - [London](city)
+#    - [Berlin](city)
+#    - [New York](city)
+#    - [pune](city)
+#    - [Mumbai](city)
+#    - [Tokyo](city)
+#    - [Rio](city)
+#    - [Dubai](city)
+#    - [paris](city)
+#    - [france](city)
+#    - [austria](city)
+#    - [Janakpur](city)
+#    - [Allahabad](city)
+#    - [Lucknow](city)
+#    - [Aurangabad](city)
+
+
+
+    
+
+
+
+
+
+
+    
+
